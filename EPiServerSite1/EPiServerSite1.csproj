@@ -165,8 +165,32 @@
       <HintPath>..\packages\EPiServer.CMS.Core.8.8.0\lib\net45\EPiServer.XForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.Client, Version=4.7.12.0, Culture=neutral, PublicKeyToken=5adb7bea47dfc40a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageVault.Client.4.7.12\lib\net45\ImageVault.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.Common, Version=4.7.12.0, Culture=neutral, PublicKeyToken=5adb7bea47dfc40a, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageVault.Client.4.7.12\lib\net45\ImageVault.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer, Version=4.7.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageVault.EPiServer.4.7.12\lib\net45\ImageVault.EPiServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer.Common, Version=4.7.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageVault.EPiServer.4.7.12\lib\net45\ImageVault.EPiServer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageVault.EPiServer.UI, Version=4.7.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageVault.EPiServer.UI.4.7.12\lib\ImageVault.EPiServer.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
@@ -179,6 +203,10 @@
     </Reference>
     <Reference Include="Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181, processorArchitecture=MSIL">
       <HintPath>..\packages\Lucene.Net.3.0.3\lib\NET40\Lucene.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Meridium.Lib, Version=1.4.2.0, Culture=neutral, PublicKeyToken=01f4840270d48493, processorArchitecture=MSIL">
+      <HintPath>..\packages\Meridium.Lib.1.4.2\lib\2.0\Meridium.Lib.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -198,6 +226,7 @@
       <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -571,6 +600,11 @@
     <Content Include="ClientResources\Styles\Styles.css" />
     <Content Include="favicon.ico" />
     <Content Include="IndexingService\IndexingService.svc" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\editor_plugin.js" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\editor_plugin_src.js" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\ImageVaultEditorButton.png" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\tinymceplugin\ImageVaultEditorPlugin.png" />
+    <Content Include="Readme.ImageVault.EPiServer.txt" />
     <Content Include="Resources\LanguageFiles\ContentTypeNames.xml" />
     <Content Include="Resources\LanguageFiles\Display.xml" />
     <Content Include="Resources\LanguageFiles\Editor.xml" />
@@ -664,6 +698,11 @@
     <Content Include="Views\MasterPages\Root.Master" />
     <Content Include="Views\MasterPages\LeftNavigation.master" />
     <Content Include="module.config" />
+    <Content Include="imagevault.client.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\web.config" />
+    <Content Include="modules\_protected\ImageVault.EPiServer.UI\ImageVault.EPiServer.UI.zip" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,7 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+using EPiServer.Core;
+using EPiServer.DataAbstraction;
+using EPiServer.DataAnnotations;
+using ImageVault.EPiServer;
+
 namespace EPiServerSite1.Models.Pages
 {
     /// <summary>
-    /// Used primarily for publishing news articles on the website
+    ///     Used primarily for publishing news articles on the website
     /// </summary>
     [SiteContentType(
         GroupName = Global.GroupNames.News,
@@ -9,6 +15,11 @@ namespace EPiServerSite1.Models.Pages
     [SiteImageUrl(Global.StaticGraphicsFolderPath + "page-type-thumbnail-article.png")]
     public class ArticlePage : StandardPage
     {
-        
+        [Display(
+            Name = "Media",
+            GroupName = SystemTabNames.Content,
+            Order = 310)]
+        [CultureSpecific]
+        public virtual MediaReference Media{ get; set; }
     }
 }
